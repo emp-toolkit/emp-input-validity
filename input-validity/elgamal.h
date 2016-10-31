@@ -5,7 +5,7 @@
 class Elgamal{ public:
 	NetIO * io;
 	eb_t g, h;
-	eb_t hTbl[EB_TABLE_MAX];
+	eb_t hTbl[RELIC_EB_TABLE_MAX];
 	const eb_t * gTbl;
 	bn_t w, q;
 	int party;
