@@ -1,6 +1,6 @@
 #ifndef ELGAMAL_H__
 #define ELGAMAL_H__
-#include <emp-tool/emp-tool.h>
+#include <emp-tool>
 
 class Elgamal{ public:
 	NetIO * io;

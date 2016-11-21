@@ -1,8 +1,8 @@
 #ifndef IV_H__
 #define IV_H__
-#include <emp-tool/emp-tool.h>
+#include <emp-tool>
 #include "input-validity/elgamal.h"
-#include <emp-ot/emp-ot.h>
+#include <emp-ot>
 
 class IV { public:
 	const bool is_check = true;

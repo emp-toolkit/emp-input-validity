@@ -1,4 +1,4 @@
-#include <emp-tool/emp-tool.h>
+#include <emp-tool>
 #include "input-validity/iv.h"
 #include "bench/bench_input-check.h"
 #include <iomanip>
