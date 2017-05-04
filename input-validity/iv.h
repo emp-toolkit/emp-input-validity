@@ -13,7 +13,7 @@ class IV { public:
 	int n1, n2, n3;
 	PRG prg;
 	PRP prp;
-	MOTExtension * ot;
+	MOTExtension<NetIO> * ot;
 	Commitment commitment;
 	const int ssp = 40;
 	block *seed = nullptr, *key = nullptr, *key_seed = nullptr, *hcot_seed = nullptr;
@@ -60,8 +60,8 @@ class IV { public:
 		this->n3 = n3;
 		Y0 = new block[n2*(ssp+1)];
 		Y1 = new block[n2*(ssp+1)];
-		ot = new MOTExtension(io);
-		OTCO otco(io); 
+		ot = new MOTExtension<NetIO>(io);
+		OTCO<NetIO> otco(io); 
 		if(party == ALICE) {
 			prgs = new PRG*[(ssp+1)];
 			seed = new block[ssp+1];
